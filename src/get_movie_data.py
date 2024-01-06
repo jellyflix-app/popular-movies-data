@@ -20,7 +20,7 @@ def download_show_data(region, type):
     read_key = os.getenv("TMDB_READ_KEY")
 
     all_movies = []
-    for i in range(1, 2):
+    for i in range(1, 501):
         url = f"https://api.themoviedb.org/3/discover/{type}?include_adult=false&include_video=false&page={i}&sort_by=popularity.desc&region={region}"
 
         headers = {"Authorization": f"Bearer {read_key}"}
