@@ -17,9 +17,7 @@ def main():
         
 
 def download_show_data(region, type):
-    read_key = os.getenv("READ_KEY")
-    # TODO
-    read_key = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZmYyMjQyYTJjNGRhNzJlNDkzY2M4ZjFjMWE2ZTQ3YyIsInN1YiI6IjY1OTZjYjE2ODY5ZTc1NmUzYTA2Y2UzZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._U3umEV14xRtn1ua5bkdoPaW1Z9dzZ97g9G9ZQCfEyo"
+    read_key = os.getenv("TMDB_READ_KEY")
 
     all_movies = []
     for i in range(1, 2):

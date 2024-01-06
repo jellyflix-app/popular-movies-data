@@ -1,4 +1,4 @@
-name: Python Script Workflow
+name: Update Popular Movies and TV Shows
 
 on:
   workflow_dispatch:
@@ -6,8 +6,11 @@ on:
     - cron: "0 1 * * 5" # Run every Sunday at midnight UTC
 
 jobs:
-  build:
+  GetMovieData:
     runs-on: ubuntu-latest
+
+    env:
+      TMDB_READ_KEY: ${{ secrets.TMDB_READ_KEY }}
 
     steps:
     - name: Checkout repository
