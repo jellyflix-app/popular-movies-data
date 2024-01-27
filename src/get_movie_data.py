@@ -4,7 +4,7 @@ import json
 import os
 
 def main():
-    countries = ["DE", "US"]
+    countries = ["DE", "US", "FR"]
     # only US for tv shows because the api doesn't seem to support region for tv shows
     download_show_data("US", "tv")
 
